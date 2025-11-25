@@ -1,5 +1,14 @@
 # DevOps Agent
 
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-547696?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-5C7E91?style=flat-square&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Anthropic%20Claude-C7B35D?style=flat-square&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-526E87?style=flat-square" />
+  <img src="https://img.shields.io/badge/Code%20Quality-Automated-9E5C4B?style=flat-square&logo=sonarqube&logoColor=white" />
+  <img src="https://img.shields.io/badge/Security%20Analysis-AI%20Powered-455A64?style=flat-square&logo=security&logoColor=white" />
+</p>
+
 AI-powered code analysis and automated bug fixing using Claude Sonnet 4.5.
 
 ## Overview
