@@ -302,6 +302,11 @@ npm run dev
 npm test
 ```
 
-## License
+---
 
-MIT
+If you like this project, please give it a star ⭐
+
+For questions, feedback, or support, reach out to:
+
+[Artem KK](https://www.linkedin.com/in/kazkozdev/) | MIT [LICENSE](LICENSE)
+
