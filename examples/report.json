@@ -1,0 +1,135 @@
+{
+  "summary": {
+    "totalIssues": 11,
+    "critical": 3,
+    "high": 2,
+    "medium": 2,
+    "low": 4,
+    "autoFixable": 5
+  },
+  "issues": [
+    {
+      "type": "error",
+      "severity": "critical",
+      "category": "Security",
+      "message": "Usage of eval() is dangerous and should be avoided",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 5,
+      "code": "eval(input); // Critical: eval is dangerous",
+      "suggestedFix": "Consider using safer alternatives like JSON.parse() or Function constructor",
+      "autoFixable": false
+    },
+    {
+      "type": "error",
+      "severity": "critical",
+      "category": "Security",
+      "message": "Possible hardcoded credential detected",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 9,
+      "code": "const apiKey = \"sk-1234567890abcdef\";",
+      "suggestedFix": "Use environment variables or secure secret management",
+      "autoFixable": false
+    },
+    {
+      "type": "error",
+      "severity": "critical",
+      "category": "Security",
+      "message": "Possible hardcoded credential detected",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 10,
+      "code": "const password = \"mySecretPassword123\";",
+      "suggestedFix": "Use environment variables or secure secret management",
+      "autoFixable": false
+    },
+    {
+      "type": "error",
+      "severity": "high",
+      "category": "Code Quality",
+      "message": "debugger statement should be removed",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 24,
+      "code": "debugger;",
+      "suggestedFix": "Remove the debugger statement",
+      "autoFixable": true
+    },
+    {
+      "type": "error",
+      "severity": "high",
+      "category": "Error Handling",
+      "message": "Empty catch block - errors are silently ignored",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 31,
+      "code": "} catch (error) {",
+      "suggestedFix": "Add error logging or proper error handling",
+      "autoFixable": false
+    },
+    {
+      "type": "warning",
+      "severity": "medium",
+      "category": "Best Practices",
+      "message": "Use let or const instead of var",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 13,
+      "code": "var counter = 0;",
+      "suggestedFix": "const counter = 0;",
+      "autoFixable": true
+    },
+    {
+      "type": "warning",
+      "severity": "medium",
+      "category": "Best Practices",
+      "message": "Use let or const instead of var",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 14,
+      "code": "var userName = \"John\";",
+      "suggestedFix": "const userName = \"John\";",
+      "autoFixable": true
+    },
+    {
+      "type": "warning",
+      "severity": "low",
+      "category": "Code Quality",
+      "message": "console.log should be removed in production code",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 18,
+      "code": "console.log(\"Debug information\");",
+      "suggestedFix": "Remove or replace with proper logging framework",
+      "autoFixable": true
+    },
+    {
+      "type": "warning",
+      "severity": "low",
+      "category": "Code Quality",
+      "message": "console.log should be removed in production code",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 19,
+      "code": "console.log(\"More debug info\");",
+      "suggestedFix": "Remove or replace with proper logging framework",
+      "autoFixable": true
+    },
+    {
+      "type": "info",
+      "severity": "low",
+      "category": "Code Quality",
+      "message": "Unresolved TODO comment found",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 39,
+      "code": "// TODO comment",
+      "suggestedFix": "Address the TODO or create a tracking issue",
+      "autoFixable": false
+    },
+    {
+      "type": "info",
+      "severity": "low",
+      "category": "Code Quality",
+      "message": "Unresolved TODO comment found",
+      "file": "/Users/artemk/dev-ops-agent/examples/sample-code.js",
+      "line": 40,
+      "code": "// TODO: Refactor this function",
+      "suggestedFix": "Address the TODO or create a tracking issue",
+      "autoFixable": false
+    }
+  ],
+  "filesAnalyzed": 1,
+  "timestamp": "2025-11-25T06:22:22.422Z"
+}
